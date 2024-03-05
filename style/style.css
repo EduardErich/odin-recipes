@@ -13,11 +13,17 @@ html {
   *::after {
     box-sizing: inherit;
   }
-  
+
+  hr {
+    border-color: lightgray;
+    margin: 12px;
+  }
+
 .navbar {
     padding: 40px 0 40px 70px;
     justify-content: center;
     display: inline-block;
+    width: 100%;
 }
 
 .item {
@@ -46,16 +52,22 @@ html {
 .gif {
     display: block;
     width: 100%;
-    height: 800px;    
+    height: 800px;   
 }
 
 .banner {
     display: block;
     width: 100%;
-    margin: 20px 0 0 0;
+    margin: 0;
     filter: opacity(50%);
     min-height: 540px;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.45);
+}
+
+.container {
+    background-color: brown;
+    width: 100%;
+    height: 800px;
 }
 
 .card {
@@ -63,15 +75,16 @@ html {
     padding: 150px 50px 150px 50px;
     width:30%;
     height: 800px;
-    position: absolute; 
+    position: relative; 
     left: 35%;   
-    top: 16%;
+    top: -100%;
     color:white;
     font-size: 26px;
 }
 
 .card h1 {
    padding-bottom: 50px;
+   color:rgb(114, 163, 94);
 }
 
 .search {
@@ -115,10 +128,6 @@ html {
     padding: 5px 50px;
 }
 
-.search:placeholder {
-    padding-left: 0;
-}
-
 .recipeGallery {
     margin: 0;
     background-color: rgb(245, 233, 219);
@@ -146,8 +155,83 @@ html {
    transition: 1s ease;
 }
 
+.recipe-cont {
+    padding-top: 200px;
+    height: 80%;
+    
+}
+
+.recipe-cont p {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.recipe-cont h1 {
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    color:  rgb(114, 163, 94);
+}
+
+.recipe-card {
+    background-color: #F4F4F3;
+    display: inline-flex;
+    margin: 100px auto 0 auto;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.45);
+    width: 80%;
+    min-width: 400px;
+}
+
+.recipe-card h2 {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    
+}
+
+.recipe-img img {
+    height: 600px;
+    width: 600px;
+    object-fit: cover;
+    border-radius: 0 25px 0 0;
+}
+
+.recipe-ing {
+    margin:50px 50px 75px 100px;
+
+}
+
+.recipe-ing ul,
+.recipe-ing h3 {
+    list-style: none;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.recipe-ing ol li {
+    margin: 12px;
+    font-size: 36px;
+}
+
+.li {
+    font-size: 17px;;
+}
+
 footer {
     width:fit-content;
     text-align: center;
     margin: 50px auto;
+}
+
+.odin-link {
+    color:rgb(79, 127, 60);
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.odin-link:hover {
+    color: rgb(139, 188, 119);
 }
